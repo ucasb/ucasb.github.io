@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../icon.jpg"/>
+    <title>Barbie Beach House</title>
+
+    <link rel="stylesheet" href="../../../style.css" />
+
+    <script src="../../../script.js" defer></script>
+  </head>
+  <body>
+    <div class="header" id="myHeader">
+      <a href="../../../index.html">
+        <pre style="float: left">
+           _    _    __       __   __   ___   _        ___  __  
+ )   / /  / `  /_)  (_ `      )_)  )_)  )_   / `  )_)  )_   )_) 
+(__ (_/  (_.  / /  .__)      /__) / \  (__  (_.  ( (  (__  / \  
+        </pre>
+      </a>
+      <a href="../work.html">
+        <pre style="float: right">
+ __     __     ______     ______     __  __    
+/\ \  _ \ \   /\  __ \   /\  == \   /\ \/ /    
+\ \ \/ ".\ \  \ \ \/\ \  \ \  __<   \ \  _"-.     
+ \ \__/".~\_\  \ \_____\  \ \_\ \_\  \ \_\ \_\ 
+  \/_/   \/_/   \/_____/   \/_/ /_/   \/_/\/_/ </pre>
+      </a>
+    </div>
+
+    <div class="content">
+      <div class="lilTile">
+        <div class="tombstone">
+          <h2><u>Barbie</u> Malibu Dream House Armoire</h2>
+          <h5>AirBnb x Barbie - Malibu, CA</h5>
+            <p>This one was fun, because how often do you get to redesign a toy in human-scale? Designed in three parts, it was installed in the Barbie Malibu dream house for three weekends for influencers to tour and promote the film. I also designed the water slide to fit the house, produced by an external vendor.</p>
+        </div>
+
+        <div class="lilTile_wrapper">
+            <model-viewer id="blendViewer" camera-controls touch-action="pan-y" ar src="https://cdn.glitch.global/5321bd21-b6ce-4dd3-a04a-793aa584262e/BBH-1.400-GA.glb?v=1692728501255" alt="BBH Armoire" shadow-intensity="0" environment-image="legacy">
+            </model-viewer>
+        </div>
+      
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Isometric View" src="photo/BBH_4.png" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Installed" src="photo/BBH_7.webp" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Amoire - Installed" src="photo/BBH_15.avif" onclick="onClick(this)"/>
+        </div>
+        
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Instagram Post" src="photo/BBH_9.webp" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Front View" src="photo/BBH_2.png" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Water Slide" src="photo/BBH_14.avif" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Inspiration" src="photo/BBH_6.jpg" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Drawing" src="photo/BBH_10.png" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Drawing" src="photo/BBH_11.png" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Armoire - Drawing" src="photo/BBH_12.png" onclick="onClick(this)"/>
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="Barbie Beach House Complete" src="photo/BBH_13.webp" onclick="onClick(this)"/>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div class="modal-content">
+        <img id="img01" style="max-width:100%">
+        <div id="caption"></div> 
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>

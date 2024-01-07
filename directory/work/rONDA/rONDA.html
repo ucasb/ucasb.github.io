@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../icon.jpg"/>
+
+    <title>ONDA Swing Set</title>
+
+    <link rel="stylesheet" href="../../../style.css" />
+
+    <script src="../../../script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header" id="myHeader">
+      <a href="../../../index.html">
+        <pre style="float: left">
+           _    _    __       __   __   ___   _        ___  __  
+ )   / /  / `  /_)  (_ `      )_)  )_)  )_   / `  )_)  )_   )_) 
+(__ (_/  (_.  / /  .__)      /__) / \  (__  (_.  ( (  (__  / \ </pre>
+      </a>
+      <a href="../work.html">
+        <pre style="float: right">
+ __     __     ______     ______     __  __    
+/\ \  _ \ \   /\  __ \   /\  == \   /\ \/ /    
+\ \ \/ ".\ \  \ \ \/\ \  \ \  __<   \ \  _"-.     
+ \ \__/".~\_\  \ \_____\  \ \_\ \_\  \ \_\ \_\ 
+  \/_/   \/_/   \/_____/   \/_/ /_/   \/_/\/_/ </pre>
+      </a>
+    </div>
+
+    <div class="content">
+
+      <div class="lilTile">  
+
+        <div class="tombstone">
+          <h2>Onda Swing Set</h2>
+          <h5>Revolve Festival 2023 - Indio, CA</h5>
+          <p>Made of bent 3" steel pipe and MDF cutouts, it was meant to function more as a Instagram backdrop than an actual swing. The 3" pipe was way overkill, but a ultimately a compromise - the client originally spec'd 6" pipe.</p>
+        </div>
+
+       <div class="lilTile_wrapper">
+          <model-viewer id="blendViewer" camera-controls touch-action="pan-y" ar src="https://cdn.glitch.global/5321bd21-b6ce-4dd3-a04a-793aa584262e/RCS-2100-SWING-GA.glb?v=1692828835000" alt="818 Tequila Windmill 3D Models" shadow-intensity="1" environment-image="legacy"></model-viewer>
+        </div>
+       
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - Isometric" src="photo/rONDA_1.png" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - Installed" src="photo/rONDA_2.jpg" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - Installed" src="photo/rONDA_3.jpg" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - Installed" src="photo/rONDA_4.jpg" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - In Progress" src="photo/rONDA_6.jpg" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - In Progress" src="photo/rONDA_7.jpg" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - Drawing" src="photo/rONDA_8.png" onclick="onClick(this)">
+        </div>
+
+        <div class="lilTile_wrapper">
+          <img alt="ONDA Swing Set - Drawing" src="photo/rONDA_9.png" onclick="onClick(this)">
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div class="modal-content">
+        <img id="img01" style="max-width:100%">
+        <div id="caption"></div> 
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>

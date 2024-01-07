@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../icon.jpg" />
+
+    <title>Builds</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="../../script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header" id="myHeader">
+      <a href="../../index.html">
+        <pre style="float: left">
+           _    _    __       __   __   ___   _        ___  __  
+ )   / /  / `  /_)  (_ `      )_)  )_)  )_   / `  )_)  )_   )_) 
+(__ (_/  (_.  / /  .__)      /__) / \  (__  (_.  ( (  (__  / \ </pre>
+      </a>
+
+      <pre style="float: right">
+ ______     __  __     __     __         _____     ______ 
+/\  == \   /\ \/\ \   /\ \   /\ \       /\  __-.  /\  ___\ 
+\ \  __<   \ \ \_\ \  \ \ \  \ \ \____  \ \ \/\ \ \ \___  \ 
+ \ \_____\  \ \_____\  \ \_\  \ \_____\  \ \____-  \/\_____\ 
+  \/_____/   \/_____/   \/_/   \/_____/   \/____/   \/_____/ </pre>
+
+    <div class="topNavCont"></div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <h2><a href="ibis/ibis.html">1997 Ibis Hakkalugi WIP</a></h2>
+        <div class="tile">
+          <div class="image" style="width: 100%">
+            <img alt="Ibis" src="ibis/photo/ibis_1.jpg" onclick="onClick(this)"/>
+          </div>
+        </div>
+        <p>My current do-it-all bike. <a href="ibis/ibis.html">See more -&#62;</a></p>
+      </div>
+
+      <div class="card">
+        <h2><a href="zaskar/zaskar.html">1994 GT Zaskar LE</a></h2>
+          <div class="tile">
+            <div class="image">
+              <img alt="Zaskar" src="zaskar/photo/zaskar_1.jpg" onclick="onClick(this)"/>
+            </div>
+            
+            <div class="image">
+              <img alt="Zaskar" src="zaskar/photo/zaskar_2.jpg" onclick="onClick(this)"/>
+            </div>       
+          </div>
+        <p>My faithful 26'er.<a href="zaskar/zaskar.html">See more -&#62;</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Laser-Cut Birdhouse</h2>
+        <h5>No-tool assembly kit</h5>
+        <div class="tile">
+          <div class="image">
+            <img alt="Birdhouse" src="bHouse/photo/bHouse_2.jpg" onclick="onClick(this)"/>
+          </div>
+
+          <div class="image">
+            <img alt="Birdhouse" src="bHouse/photo/bHouse_1.jpg" onclick="onClick(this)"/>
+          </div>
+        </div>
+        <p>Finger-jointed birdhouse assembled from 2 laser-cut sheets of 16" x 16" 1/4" ply or similar material. Modeled in Rhino, it's a 3-walled structure with an optional fourth wall that can be slid though the front. Theoretically, an open design is better for birdhouses, while a closed design is better for bird feeders. Pictured example currently hangs on the Chesapeake Bay, with the occasional visitor.</p>
+      </div>
+
+      <div class="card">
+        <h2>Jeopardy Box</h2>
+        <h5>Arduino-based console for playing Jeopardy at home</h5>
+        <div class="tile">
+          <div class="image">
+            <img alt="jeoBox" src="jBox/photo/jBox_1.jpg" onclick="onClick(this)"/>
+          </div>
+          
+          <div class="image">
+            <img alt="jeoBox" src="jBox/photo/jBox_2.jpg" onclick="onClick(this)"/>
+          </div>
+            
+          <div class="image">
+            <img alt="jeoBox" src="jBox/photo/jBox_3.jpg" onclick="onClick(this)"/>
+          </div>
+
+          <div class="image">
+            <img alt="jeoBox" src="jBox/photo/jBox_4.jpg" onclick="onClick(this)"/>
+          </div>
+        </div>
+        <p>A COVID project made only with parts available at the makerspace, the box is programmed with traditional Jeopardy rules and features host controls (on the box), 3 color-coded player buzzers linked via TRRS audio cables, a speaker with unique sounds for all actions, and two seperate LED circuits, all housed in a laser cut enclosure and powered by a cheap Arduino Nano clone. I'm particularly proud of the 10-unit Neopixel array used as a countdown indication, which act just like the real contestant podiums! How it works:</p>
+        <ol>
+          <li>In its default state (State A), box awaits host command.
+          <li>Host reads the clue, and opens the lines with the white button (State B). If the player buzzes in before State B, they are disqualified until the box returns to State A. A ten-second timer begins - if no players buzz in, the box resets to State A.</li>
+          <li>If a player does buzz in, the box goes into State C, and the bottom LED strip glows either Red, Blue, or Green depending on the player. A 10 second timer begins. If the player answers correctly, the host presses the red reset button, and returns to State A - otherwise, the host presses the white button, and returns to State B, where any remaining qualified players can buzz in.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2><a href="sBoard/sBoard.html">SDRE Skateboard</a></h2>
+        <div class="tile">
+          <div class="image">
+            <img alt="Skateboard" src="sBoard/photo/sBoard_1.jpg" onclick="onClick(this)"/>
+          </div>
+          
+          <div class="image">
+            <img alt="Skateboard" src="sBoard/photo/sBoard_2.jpg" onclick="onClick(this)"/>
+          </div>            
+
+          <div class="image">
+            <img alt="Skateboard" src="sBoard/photo/sBoard_3.jpg" onclick="onClick(this)"/>
+          </div>
+
+          <div class="image">
+            <img alt="Skateboard" src="sBoard/photo/sBoard_4.jpg" onclick="onClick(this)"/>
+          </div>
+        </div>
+        <p>Handmade skateboard deck, made while teaching Skateboard camp at BitSpace in 2019. <a href="sBoard/sBoard.html">See more -&#62;</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Cross Stitch Bliss</h2>
+        <h5>X-stitched rendition of the iconic Microsoft XP default wallpaper</h5>
+        <div class="tile">
+          <div class="image" style="width: 75%">
+            <img alt="X-Stitch Bliss" src="xBliss/photo/xBliss_2.jpg" onclick="onClick(this)"/>
+          </div>
+            
+          <div class="image" style="width: 75%">
+            <img alt="Microsoft XP Wallpaper" src="xBliss/photo/xBliss_3.jpg" onclick="onClick(this)"/>
+          </div>            
+        </div>
+        <p>My first go at cross-stitching - this was mostly eye-balled, but I'm happy with how it turned out.</p>
+      </div>
+
+      <div class="card">
+        <h2>Digidelay Effect Pedal Enclosure</h2>
+          <div class="tile">
+            <div class="image">
+              <img alt="Digidelay Pedal" src="dDelay/photo/dDelay_1_crop.jpg" onclick="onClick(this)"/>
+            </div>
+            
+            <div class="image">
+              <img alt="Digidelay Pedal" src="dDelay/photo/dDelay_2.jpg" onclick="onClick(this)"/>
+            </div>            
+          </div>
+          <p>Painted aluminum pedal enclosure with a design rastered onto it. Pedal circuit was built from a PCB using components scrounged from the Oberlin Conservatory's Electronic Music Studios.</p>
+      </div>
+
+      <div class="card">
+        <h2>Signature Ceramics Stamp</h2>
+        <h5>3D printed hand stamps + case</h5>
+        <div class="tile">
+          <div class="image">
+            <img alt="Stamp bottoms" src="stamp/photo/stamp_1.jpg" onclick="onClick(this)"/>
+          </div>
+            
+          <div class="image">
+            <img alt="Final result" src="stamp/photo/stamp_2.jpg" onclick="onClick(this)"/>
+          </div>            
+
+          <div class="image">
+            <img alt="Stamps in FFF-printed case with magnetic top" src="stamp/photo/stamp_3.jpg" onclick="onClick(this)"/>
+          </div>        
+
+          <div class="image">
+            <img alt="Stamp Test - Using Formlabs 10K Rigid Resin. Decided against such a brittle resin for long term use." src="stamp/photo/stamp_4.jpg" onclick="onClick(this)"/>
+          </div>        
+        </div>
+        <p>Made for my mother-in-law, who sketched her signature design on her iPad and sent it to me. Drawing was vectorized and imported into Solidworks for a simple hand stamp. Printed on a Formlabs Form 3+ using their Tough 1500 resin at a 0.1mm layer height.</p>
+      </div>
+    </div>
+
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div class="modal-content">
+        <img id="img01" style="max-width:100%">
+        <div id="caption"></div> 
+      </div>
+    </div>
+  </body>
+</html>
