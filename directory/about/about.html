@@ -1,60 +1,54 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="../../icon.jpg" />
+    <link rel="icon" href="icon.jpg" />
 
     <title>About</title>
 
-    <!-- The website stylesheet -->
     <link rel="stylesheet" href="../../style.css" />
 
-    <!-- The website JavaScript file -->
     <script src="../../script.js" defer></script>
   </head>
 
+
   <body>
 
-    <div class="header" id="myHeader">
-      <a href="../../index.html">
-        <pre style="float: left">
-           _    _    __       __   __   ___   _        ___  __  
- )   / /  / `  /_)  (_ `      )_)  )_)  )_   / `  )_)  )_   )_) 
-(__ (_/  (_.  / /  .__)      /__) / \  (__  (_.  ( (  (__  / \ </pre>
-      </a>
-        <pre style="float: right">
- ______     ______     ______     __  __     ______  
-/\  __ \   /\  == \   /\  __ \   /\ \/\ \   /\__  _\ 
-\ \  __ \  \ \  __<   \ \ \/\ \  \ \ \_\ \  \/_/\ \/ 
- \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\    \ \_\ 
-  \/_/\/_/   \/_____/   \/_____/   \/_____/     \/_/</pre>
+      <div class="site-header">
+        <div class="column-1" id="stiky"><a href="../../index.html">Lucas Brecher</a></div>
+        <div class="column"></div>
+        <div class="column">About</div>
+        <div class="column"><a href="LBrecher_Resume_9.13.25.pdf" target="_blank" rel="noopener noreferrer">Résumé</a></div>
 
-      <div class="topNavCont">
-        <div class = "topNav"></div>
       </div>
+
+    <div class="content" style="margin: 2rem;">
+      <div class = "spacer" style="height:2em"></div>
+
+      <div class="textBox"><p>I'm Lucas, born and currently living in Los Angeles. You're currently browsing a small collection of my personal and professional work in custom design and fabrication. The common thread has always been building great things, and enabling others to do the same. While I'm a hands-on guy, I get enormous satisfaction in developing the tools and teaching the skillsets required to realize the build in your head, and I've been fortunate to have the opportunity to do so over and over again.</p>
+
+      <p>I attended Oberlin College & Conservatory (2015-2019), where I majored in Rhetoric & Composition but spent most of my time in the Electronic Museum Studios (EMS), hardware hacking and building analog synthesizers. I helped found the EMS Makerspace, expanding its capabilities and running daily operations until I graduated.</p>
+
+      <p>Post-graduation, I moved to Chicago and found work as a Makerspace Guide at <a href="https://bitspacechicago.com/" target="_blank" rel="noopener noreferrer">Bitspace Chicago</a> (2020-2021), a fabrication space dedicated to teaching kids design-thinking and hands-on skills like carpentry, robotics, and CAD. Almost immediately, COVID lockdowns shut down our usual workshops, and had to quickly pivot to online instruction. After a lot of trial and error, I developed multiple kits and curricula (<a href="../fab/fab.html#rcCar">example</a>) as a newly-promoted Product Designer, which were in turn distributed and taught to Chicago Public School students.</p>
+
+      <p>After moving back to Los Angeles, I began a job as a Prototyping Lab Manager for <a href="https://www.3deo.co/" target="_blank" rel="noopener noreferrer">3DEO</a> (2021-2022), where I managed prototype fabrication for 40+ engineers developing the company's proprietary metal 3D-printing tech.</p>
+
+      <p>I currently work as a Technical Designer and Draftsperson at a fabrication house that orbits LA's entertainment industry. Using a combination of primarily Solidworks & Rhino, I develop comprehensive blueprints for builds featured across the world by brands such as Formula 1, Warner Brothers, and Hermes.</p>
+
+      When I'm not working, I'm cycling, poring over vintage mountain bike magazines, or visiting flea markets.</p></div>
+
+  <div id="scrollToTop">&#8679;</div>
+
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="">
+          <p id="lightbox-caption"></p>
+          <span id="lightbox-close">&times;</span>
+        </div>
+      </div>
+
     </div>
-
-    <div class="content">
-      <div class="textCard">
-
-        <h3>Hi:</h3>
-        <p>I'm Lucas, born and currently living in Los Angeles. This website is primarily a portfolio of the things that I've designed and/or built that I'm proud of, some for work (found <a href="../work/work.html" target="_blank">here</a>), some for me (found <a href="../builds/builds.html" target="_blank">here</a>). I'm always looking for opportunities to delve deeper into the fields of industrial design, product design, and additive manufacturing.</p>
-
-        <p>I currently work as a Technical Designer and Draftsperson at a fabrication house that orbits LA's entertainment industry, and have past experience working in museums, makerspaces, and industrial manufacturing. <b>The job titles have varied place-to-place, but the common thread has always been building great things, and enabling others to do the same</b>. While I'm a hands-on guy, I get enormous satisfaction in developing the tools and teaching the skillsets required to realize the build in your head, and I've been fortunate to have the opportunity to do so over and over again.</p>
-
-        <p>When I'm not working, I'm cycling, poring over vintage mountain bike magazines, or visiting flea markets.</p>
-        <br>
-      </div>
-    </div>
-
-  <div id="modal01" class="modal" onclick="this.style.display='none'">
-    <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      <div class="modal-content">
-        <img id="img01" style="max-width:100%">
-        <div id="caption"></div> 
-      </div>
-  </div>
-
   </body>
 </html>

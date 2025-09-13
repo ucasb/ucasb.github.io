@@ -1,52 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="../../icon.jpg" />
+    <link rel="icon" href="icon.jpg" />
 
-    <title>Contact</title>
+    <title>Fabrication</title>
 
-    <!-- The website stylesheet -->
     <link rel="stylesheet" href="../../style.css" />
 
-    <!-- The website JavaScript file -->
     <script src="../../script.js" defer></script>
   </head>
 
+
   <body>
-    <div class="header" id="myHeader">
-      <a href="../../index.html">
-        <pre style="float: left">
-           _    _    __       __   __   ___   _        ___  __  
- )   / /  / `  /_)  (_ `      )_)  )_)  )_   / `  )_)  )_   )_) 
-(__ (_/  (_.  / /  .__)      /__) / \  (__  (_.  ( (  (__  / \ </pre>
-      </a>
 
-      <pre style="float: right">
- ______     ______     __   __     ______   ______     ______     ______  
-/\  ___\   /\  __ \   /\ "-.\ \   /\__  _\ /\  __ \   /\  ___\   /\__  _\ 
-\ \ \____  \ \ \/\ \  \ \ \-.  \  \/_/\ \/ \ \  __ \  \ \ \____  \/_/\ \/ 
- \ \_____\  \ \_____\  \ \_\\"\_\    \ \_\  \ \_\ \_\  \ \_____\    \ \_\ 
-  \/_____/   \/_____/   \/_/ \/_/     \/_/   \/_/\/_/   \/_____/     \/_/ </pre>
+      <div class="site-header">
+        <div class="column-1" id="stiky"><a href="../../index.html">Lucas Brecher</a></div>
+        <div class="column"></div>
+        <div class="column">Contact</div>
+<!--         <div class="column">
+            <div class="menu">
+              <button class="menu-button" onclick="toggleDropdown()">Index <span style="font-size:15px">☰</span></button>
+              <div id="dropdownMenu" class="dropdown">
+                <a href="#REVOLVE">Revolve Fest</a>
+              </div>
+            </div>
+        </div> -->
+      </div>
 
-    <div class="topNavCont">
-      <div class = "topNav"></div>
-    </div>
-  </div>
-
-    <div class="content">
+    <div class="content" style="margin: 2rem;">
       <div class="textCard">
         <h3 style="text-align: center;"><a href="mailto:lucasbrecher@gmail.com">lucasbrecher@gmail.com</a></h3>
       </div>
-    </div>
+      <div id="scrollToTop">&#8679;</div>
 
-<!--     <div id="modal01" class="modal" onclick="this.style.display='none'">
-      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      <div class="modal-content">
-        <img id="img01" style="max-width:100%">
-      <div id="caption"></div> 
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="">
+          <p id="lightbox-caption"></p>
+          <span id="lightbox-close">&times;</span>
+        </div>
       </div>
-    </div> -->
+
+    </div>
   </body>
 </html>

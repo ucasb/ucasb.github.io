@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="icon.jpg" />
+
+    <title>Fabrication</title>
+
+    <link rel="stylesheet" href="../../style.css" />
+
+    <script src="../../script.js" defer></script>
+  </head>
+
+
+  <body>
+
+      <div class="site-header">
+        <div class="column-1" id="stiky"><a href="../../index.html">Lucas Brecher</a></div>
+        <div class="column"></div>
+        <div class="column">Fabrication</div>
+<!--         <div class="column">
+            <div class="menu">
+              <button class="menu-button" onclick="toggleDropdown()">Index <span style="font-size:15px">☰</span></button>
+              <div id="dropdownMenu" class="dropdown">
+                <a href="#REVOLVE">Revolve Fest</a>
+              </div>
+            </div>
+        </div> -->
+      </div>
+
+    <div class="content" style="margin: 2rem;">
+      <div class = "spacer" style="height:2em"></div>
+
+      <div class="textBox"><p>A small sample of some of the things I've made for myself, friends or work. Media/method include carpentry, paint, CNC, laser-cutting, 3D printing (FDM, SLS & binder-jet), casting, mold-making, electronics, cross-stitch and microcontroller programming. Recently, I've mostly been building <a href="../bikes/bikes.html">bikes</a>.</p></div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+      <div class ="image-row">
+        <img src="fabHighlights/11_bBible.jpg" style="width: 25%" class="hover-overlay" alt="Circuit-Bent Bible" link="fab.html#bBible">
+        <img src="fabHighlights/11_bHouse.jpg" style="width: 25%" class="hover-overlay" alt="Birdhouse Kit" link="fab.html#bHouse">
+        <img src="fabHighlights/11_jBox.jpg" style="width: 25%" class="hover-overlay" alt="Jeopardy Box" link="fab.html#jBox">
+        <img src="fabHighlights/11_xbliss.jpg" style="width: 25%" class="hover-overlay" alt="Cross-Stitch Bliss" link="fab.html#xBliss">
+      </div>
+      <div class ="image-row">
+        <img src="fabHighlights/34_owens.jpg" style="width: 20%" class="hover-overlay" alt="Laura Owens Tactile Map" link="fab.html#owensMap">
+        <img src="fabHighlights/34_BM.jpg" style="width: 20%" class="hover-overlay" alt="Bellow Mold" link="fab.html#bellowMold">
+        <img src="fabHighlights/34_SnR.jpg" style="width: 20%" class="hover-overlay" alt="Circuit-Bent Speak & Read" link="fab.html#speakNread">
+        <img src="fabHighlights/34_CAA.jpg" style="width: 20%" class="hover-overlay" alt="Contact Angle Analyzer" link="fab.html#CAA">
+        <img src="fabHighlights/34_vac.jpg" style="width: 20%" class="hover-overlay" alt="Vacuum Tools" link="fab.html#vacTools">
+      </div>
+      <div class ="image-row">
+        <img src="fabHighlights/11_stamp.jpg" style="width: 25%" class="hover-overlay" alt="Ceramics Stamp" link="fab.html#stamp">
+        <img src="fabHighlights/11_sBoard.jpg" style="width: 25%" class="hover-overlay" alt="SDRE Skateboard" link="fab.html#sBoard">
+        <img src="fabHighlights/11_rcCar.jpg" style="width: 25%" class="hover-overlay" alt="RC Car" link="fab.html#rcCar">
+        <img src="fabHighlights/11_bookMarks.jpg" style="width: 25%" class="hover-overlay" alt="LA & Chicago Home Bookmarks">
+      </div>
+
+      <div class ="image-row">
+        <img src="fabHighlights/43_3dGLK_1.jpg" style="width: 42.85714301%" class="hover-overlay" alt="Transparent G17" link="fab.html#glk">
+        <img src="fabHighlights/911r_169.jpg" style="width: 57.142500204%" class="hover-overlay" alt="Porsche 911 R Lenses" link="fab.html#911r">
+      </div>
+
+
+    <div class = "spacer" style="height:5em"></div>
+
+     <div class="tile" id="bBible">
+        <div class="tileTitle">
+          <div>Circuit-Bent Bible</div>
+          <div></div>
+          <div>2020</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="bBible/bBible_1.jpg" alt="" />
+                  <img src="bBible/bBible_2.jpg" alt="" />
+                  <img src="bBible/bBible_3.png" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>Disassembled "Wonder Bible" audio player, 3D printed enclosure, and standard electronic components.</h2>
+
+            <p>Circuit-bent is somewhat of a lie here - as detailed by <a href="https://www.lookmumnocomputer.com/wonder-wonder-bible">LookMumNoComputer</a>, these cheap electronic Bible players are nearly unbendable. Instead, there is a circuit-bent Sparkfun .wav player, hooked up to a series of momentary SPDT toggle switches that each trigger a different bible verse on an SD card, up to 4 of which can be played simultaneously. Glitch and pitch controls are included, with a 1/4" output jack and 9V jack (battery power optional). The bible verses can be switched out with any .wav file, making it a cute and glitchy audio trigger device. Pardon the wiring job!</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="bellowMold">
+        <div class="tileTitle">
+          <div>Experimental Bellow Mold</div>
+          <div></div>
+          <div>2022</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="bellow mold/BM_1.jpg" alt="" />
+                  <img src="bellow mold/BM_2.jpg" alt="" />
+                  <img src="bellow mold/BM_3.jpg" alt="" />
+                  <img src="bellow mold/BM_4.jpg" alt="" />
+                  <img src="bellow mold/BM_5.jpg" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>FDM & SLA printed injection mold for metal-powder printer spindle vacuums.</h2>
+            <p>3DEO's binder-jet, metal 3D printed relyed on tiny, high-RPM spindles cutting through layers of sticky stainless steel powder. To protect these delicate spindles from being clogged with micron-size powder, each had to be equipped with bellows that allowed them to retract and extend hundreds of times per cycle.</p>
+            <p>I personally 3D printed hundreds of these bellows, which would tear after two weeks of constant uptime - the goal here was to create a simple injection mold for creating silicone rubber bellows at a fraction of the cost of 3D printed ones.</p>
+            <p>The project was successful with a nice 3-part mold, but ultimately never implemented, as it would have required re-certification of multiple processes that the company was unwilling to entertain at the time.</p>
+          </div>
+        </div>
+      </div>
+
+<div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="jBox">
+        <div class="tileTitle">
+          <div>Jeopardy Box</div>
+          <div></div>
+          <div>2020</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <!-- the ONLY overflow:hidden element: -->
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="jBox/jBox_1.jpg" alt="" />
+                  <img src="jBox/jBox_2.jpg" alt="" />
+                  <img src="jBox/jBox_3.jpg" alt="" />
+                  <img src="jBox/jBox_4.jpg" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>Arduino-based console for playing Jeopardy at home</h2>
+            <p>A COVID project made only with parts available at the makerspace, the box is programmed with traditional Jeopardy rules and features host controls, 3 color-coded player buzzers linked via TRRS audio cables, a speaker with unique sounds for all actions, and two seperate LED circuits. Electronics are housed in a laser cut enclosure and powered by a cheap Arduino Nano clone. I'm particularly proud of the 10-unit Neopixel array used as a countdown indication, which act just like the real contestant podiums!</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+      <div class="tile" id="bHouse">
+        <div class="tileTitle">
+          <div>Birdhouse Kit</div>
+          <div></div>
+          <div>2021</div>
+        </div>
+
+        <div class="tileContent" style="height: auto">
+          <div class="tileImg">
+            <img src="bHouse/bHouse_2.jpg" style="width:50%">
+            <img src="bHouse/bHouse_1.jpg" style="width:50%">
+          </div>
+
+          <div class="tileText">
+            <p>Finger-jointed birdhouse assembled from 2 laser-cut 16" x 16" 1/4" ply sheets. Modeled in Rhino, it's a 3-walled structure with an optional sliding fourth wall (theoretically, an open design is better for birdhouses, while a closed design is better for bird feeders). Pictured example currently hangs on the Chesapeake Bay, with the occasional visitor.</p>
+          </div>
+        </div>
+      </div> 
+
+ <div class = "spacer" style="height:4em"></div>
+
+      <div class="tile" id="xBliss">
+        <div class="tileTitle">
+          <div>"Bliss" Cross-stitch</div>
+          <div></div>
+          <div>2018</div>
+        </div>
+
+        <div class="tileContent" style="height: auto">
+          <div class="tileImg">
+            <img src="xBliss/xBliss_1.jpg" style="width:40%">
+            <img src="xBliss/xBliss_3.jpg" style="width:60%">
+          </div>
+
+          <div class="tileText">
+            <h2>X-stitched rendition of the iconic Microsoft XP default wallpaper</h2>
+            <p>My first go at cross-stitching - this was mostly eye-balled, but I'm happy with how it turned out.</p></div>
+        </div>
+      </div> 
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="CAA">
+        <div class="tileTitle">
+          <div>Contact Angle Analyzer </div>
+          <div></div>
+          <div>2023</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <!-- the ONLY overflow:hidden element: -->
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="contactAngle/CAA_2.jpg" alt="" />
+                  <img src="contactAngle/CAA_3.jpg" alt="" />
+                  <img src="contactAngle/CAA_1.jpg" alt="" />
+
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>AKA a Optical Goniometer</h2>
+            <p> Fixture for using a camera phone to measure the contact angle of 3DEO's prioritary binder solution, used to keep metal powder together during the 3D printing process. Made of aluminum extrusion and 3D-printed parts, a diffused backlight silhouettes a droplet extruded from a screw-activated syringe. Professional models cost well over $10K.</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="911r">
+        <div class="tileTitle">
+          <div>Porsche 911R Lenses</div>
+          <div></div>
+          <div>2023</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <!-- the ONLY overflow:hidden element: -->
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="lens/911r_1.jpg" alt="" />
+                  <img src="lens/911r_2.jpg" alt="" />
+                  <img src="lens/911r_3.jpg" alt="" />
+                  <img src="lens/911r_4.jpg" alt="" />
+                  <img src="lens/911r_12.jpg" alt="" />
+
+                  <img src="lens/911r_5.jpg" alt="" />
+                  <img src="lens/911r_6.jpg" alt="" />
+                  <img src="lens/911r_7.jpg" alt="" />
+                  <!-- <img src="lens/911r_9.jpg" alt="" /> -->
+                  <img src="lens/911r_10.jpg" alt="" />
+                  <!-- <img src="lens/911r_11.jpg" alt="" /> -->
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>Cast reproductions of 1967 Porsche 911R lenses, seals, bending jigs & bucks for vacuum-formed lens housings</h2>
+            <p>Commisioned by a local Porsche shop, this project is how and why I learned to cast and design molds. Luckily, I was working as a lab manager at the time, and had all the tools lying around in different corners of the factory. I had planned on SLA-printing all 25 lenses until I encountered the upper limits of photopolymer resin transparency. Scroll through the photos to see the many trials and errors of the process.</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+      <div class="tile" id="glk">
+        <div class="tileTitle">
+          <div>Transparent G17</div>
+          <div></div>
+          <div>2022</div>
+        </div>
+
+        <div class="tileContent" style="height: auto">
+          <div class="tileImg">
+            <img src="glk/3dGLK_1.jpg" style="width:57.142857142%">
+            <img src="glk/3dGLK_2.jpg" style="width:42.857142857%">
+          </div>
+
+          <div class="tileText">
+            <h2>SLA-printed Glock 17 model</h2>
+            <p> Resin-printed prop to display 3DEO's 3D-printed steel Glock 17 parts, including the firing pin, slide back plate, magazine release, trigger, and more (photo only shows the first two). Model was brought to multiple firearm manufacturing conventions. To be clear, this is <u>non-functional</u>, and only designed to fit some parts - other glock lower parts would not fit, nor could it actually accomodate a real slide.</p>
+          </div>
+        </div>
+      </div> 
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="rcCar">
+        <div class="tileTitle">
+          <div>RC Car Kit</div>
+          <div></div>
+          <div>2022</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <!-- the ONLY overflow:hidden element: -->
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="rcCar/rcCar_1.jpg" alt="" />
+                  <img src="rcCar/rcCar_2.jpg" alt="" />
+                  <img src="rcCar/rcCar_4.jpg" alt="" />
+                  <img src="rcCar/rcCar_3.jpg" alt="" />
+                  <img src="rcCar/rcCar_5.jpg" alt="" />
+                  <img src="rcCar/rcCar_7.jpg" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>Self-contained kit for building a hobby-motor car and controller</h2>
+            <p>Designed during first COVID lockdowns as an alternative to in-person instruction. Tested during virtual BitSpace summer camps, and later distributed to Chicago Public Schools. The challenge was designing a kid-proof electronics kit for a wide age range, without requiring any soldering or fine motor skills.</p>
+
+            <p>Designed while I was a Product Engineer // Makerspace guide at BitSpace Chicago. Arcade buttons respectively control left and right DC hobby motor - signal travels with a TRRS audio cable that tethers the controller to the car. Assembly slides linked <a href="https://drive.google.com/file/d/1Sqg1jJWLGXxSriy0GloJGggU1PjVCavu/view">here</a>.</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="stamp">
+        <div class="tileTitle">
+          <div>Ceramics Stamp</div>
+          <div></div>
+          <div>2021</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <!-- the ONLY overflow:hidden element: -->
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="stamp/stamp_1.jpg" alt="" />
+                  <img src="stamp/stamp_2.jpg" alt="" />
+                  <img src="stamp/stamp_3.jpg" alt="" />
+                  <img src="stamp/stamp_4.jpg" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>3D-printed Ceramics Stamp</h2>
+            <p>Made for my very talented mother-in-law, I vectorized her signature marking and imported it into Solidworks for a simple hand stamp. Printed on a Formlabs Form 3+ using their Tough 1500 resin at a 0.1mm layer height.</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+      <div class="tile" id="vacTools">
+        <div class="tileTitle">
+          <div>Vacuum Tools</div>
+          <div></div>
+          <div>2022</div>
+        </div>
+
+        <div class="tileContent" style="height: auto">
+          <div class="tileImg">
+            <img src="vac tools/vac_1.JPG" style="width:50%">
+            <img src="vac tools/vac_2.JPG" style="width:50%">
+          </div>
+
+          <div class="tileText">
+            <h2>3D-Printed Vacuum Fittings</h2>
+            <p>Fittings for cleaning excess stainless-steel powder from printer surfaces & cakes. Developed with the help of printer technicians, each fitting is designed to make their multi-step process of part production easier. Second photo shows what they were using beforehand.</p>
+          </div>
+        </div>
+      </div> 
+
+ <div class = "spacer" style="height:4em"></div>
+
+      <div class="tile" id="owensMap">
+        <div class="tileTitle">
+          <div>Laura Owens Tactile Map</div>
+          <div></div>
+          <div>2017</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <img src="owens tactile/1236.JPG" style="width:50% ; margin:auto">
+            <img src="owens tactile/Laura-Owens1.jpg" style="width:50% ; margin:auto">
+          </div>
+
+          <div class="tileText">
+            <p>3D printed tactile map of Laura Owen's <i>Untitled</i>, 2013, designed to accompany a verbal description of the artwork. Print-quality is terrible, but it was my very first print (and first time using Blender), and opened my mind to the possibilities.</p>
+            <p>I designed this piece as a part of a Comparative Literature course in college - the assignment was to translate a piece of media, and in the process, learn to make the difficult choices translators face in the process. Being monolingual and with a museum background, I wanted to incorporate a tool I had learned about in different disability studies classes: a tactile map of a painting for visually-impaired art viewers. The map functions best when paired with verbal description, which can be found here - [link to come].</p>
+            <p>In the past, museums have specialized Swell Form printers, the paper for which costs hundreds of dollars per ream. While there are a few <a href="https://www.museumnext.com/article/tactile-images-in-museums-enhancing-accessibility-and-engagement/">online examples</a> of using 3D printed alternatives, I believe its a teaching tool that has not been explored nearly enough.</p>
+          </div>
+        </div>
+      </div> 
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="sBoard">
+        <div class="tileTitle">
+          <div>SDRE 'Diary' Skateboard</div>
+          <div></div>
+          <div>Summer 2019</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="sBoard/sBoard_2.jpg" alt="" />
+                  <img src="sBoard/sBoard_1.jpg" alt="" />
+                  <img src="sBoard/sBoard_5.jpg" alt="" />
+                  <img src="sBoard/sBoard_7.jpg" alt="" />
+                  <img src="sBoard/sBoard_9.jpg" alt="" />
+                  <img src="sBoard/sBoard_10.jpg" alt="" />
+                  <img src="sBoard/sBoard_8.jpg" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <h2>Deck built from scratch, painted to resemble the cover of Sunny Day Real Estate's 1994 album, Diary.</h2>
+            <p>7 layers of maple veneer glued in perpendicular orientation, placed in a vacuum bag, and shaped around a carved foam mold. Once the glue is dry, the shape is jigsawed out, painted, and finished. I'll be the first to admit I'm no painter, so I used a laser cutter to etch out a layer of masking tape.</p>
+
+            <p>Last photo shows the camper skateboards made during BitSpace's week-long 2019 summer skateboard camp. Please note the amazing Piranha plant, Final Fantasy Cloud sword and TWO <a href="https://en.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure">Jojo's Bizzare Adventure</a> characters - the kids are very alright.</p>
+          </div>
+        </div>
+      </div>
+
+ <div class = "spacer" style="height:4em"></div>
+
+     <div class="tile" id="speakNread">
+        <div class="tileTitle">
+          <div>Circuit Bent Speak & Read</div>
+          <div></div>
+          <div>2022</div>
+        </div>
+
+        <div class="tileContent">
+          <div class="tileImg">
+            <div class="carousel-container">
+              <button class="prev">&#10094;</button>
+
+              <div class="carousel-viewport">
+                <div class="carousel-track">
+                  <img src="speakNread/SNR_6.JPG" alt="" />
+                  <img src="speakNread/SNR_1.JPG" alt="" />
+                  <img src="speakNread/SNR_3.JPG" alt="" />
+                  <img src="speakNread/SNR_4.JPG" alt="" />
+                  <img src="speakNread/SNR_5.JPG" alt="" />
+                </div>
+              </div>
+
+              <button class="next">&#10095;</button>
+
+              <div class="carousel-thumbnails"></div>
+            </div>
+          </div>
+
+          <div class="tileText">
+            <p>Circuit-bent Texas Instruments Speak & Read. A very well-documented bend (by others), but with fantastic results. Video coming soon.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "spacer" style="height:4em"></div>
+
+      <div class="site-footer">
++=============/\=======================================================+
+|            /  \         /\       /\                     -            |
+|           /    \      _/  \/\   /  \ /\                / \           |
+|          /      \  _-~       \_/    \  \    _   /\    /   \          |
+|         /        \/         _           \  / \_/  \  /     \         |
+|  Lucas Brecher      ____ __ __o       __  ,__o     \/       \        |
+|  Los Angeles,CA        ___ -\<,      __ _-\_<,               \       |
+|____________________________O/_O________(*)/'(*)______________________|
+========================================================================</div>
+
+  <div id="scrollToTop">&#8679;</div>
+
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="">
+          <p id="lightbox-caption"></p>
+          <span id="lightbox-close">&times;</span>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

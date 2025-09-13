@@ -13,100 +13,441 @@
 /* Basic page style resets */
 * {
   box-sizing: border-box;
+/*  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: "Lucida Console", "Courier New", monospace;
+
+  overflow: visible;
 }
+
 [hidden] {
   display: none !important;
 }
 
-font-family: "Inconsolata", monospace;
-
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
-
-/* Navigation grid */
-
-.divider {
-  padding: 0 1rem;
+.site-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 20px;      /* your original spacing */
+  padding-top: 40px;
+  padding-left: 20px;
+  top:0px;
+  position: relative;
+  z-index: 1;
+  width:115%;
+  margin: auto;
 }
 
-
-body {
-  background-color: var(--color-bg);
-  margin-top: 0px;
-}
-
-/* Page structure */
-
-.header {
-  padding: 10px 16px;
-  color: #000000;
-  background-color: rgba(255,255,255,0.5);
-  padding-bottom:10px;
-  width:100%;
-  margin-top: 0px;
-  z-index: +1;
-}
-
-.header a {
-  text-decoration: none;
-  color: blue;
-  transition: color 0.5s;
+.site-footer {
+  font-family: monospace;
+  font-size:14px;
+  white-space: pre;
+  inline-size: min-content;
+/*  background-color: greenyellow;*/
+  margin: auto;
 }
 
 .content {
-  
-  justify-content:left;
-  padding: 16px;
-  width: 80%;
-  margin:auto;
+/*  background-color: white;*/
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  position: static;
+  font-family: inherit;
+}
+
+.column a {
+  color:black;
+  text-decoration: none;
+    font-family: inherit;
+
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.column-1 {
   position: fixed;
+  padding-top: 25px;
+  font-family: inherit;
+  z-index:4;        /* sit above page content */
+}
+
+.column-1 a {
+  font-family: inherit;
+  color: black;
+  text-decoration: none;
+/*  background-color: rgba(255,255,255,0.5);*/
+}
+
+.column-1 a:hover {
+  text-decoration: underline;}
+
+
+/* Menu container */
+.menu {
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+    font-family: inherit;
+
+}
+
+.menu button {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* Menu button */
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Underline on hover, no color change */
+.menu-button:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown list (initially hidden) */
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: greenyellow;
+  color: black;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+/* Visible class for dropdown */
+.dropdown.show {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+
+.spacer {
   width: 100%;
-  padding-right: 32px;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 10px;
+.image-row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display:flex;
+/*  z-index: 1;*/
 }
 
-.pages {
-  font-family: monospace;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 16px;
+.image-row a {
+/*  display: flex;
+  width: 20px;*/
+}
+
+/* wrapper around hover‑enabled image */
+.overlay-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+/* let wrapper handle sizing; image fills it */
+.overlay-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* the semi‑opaque overlay */
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.overlay-container:hover .overlay {
+  opacity: 1;
 }
 
-.pages a {
+/* text container */
+.overlay-text {
+  font-size: 1.1em;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* make any link fill the text and inherit styling */
+.overlay-text a {
+  color: #fff;
   text-decoration: none;
-  color: blue;
-  transition: color 0.5s;
+}
+.overlay-text a:hover {
+  text-decoration: underline;
 }
 
- a:hover {
-  color: red;
-}
-
-
-.card {
-  font-family: "Lucida Console", "Courier New", monospace;
-  background-color: white;
-  padding: 5px;
-  margin-top: 20px;
-}
-
-.card p{
+.textBox {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  justify-content: normal;
+/*  background-color: greenyellow;*/
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 1000px;
+  border: dashed;
+  border-radius: 10px;
+  padding: 10px;
   text-align: justify;
-  line-height: 1.375;
 }
 
+
+.tile {
+  display: normal;
+  margin: auto;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1500px;
+}
+
+.tileContent {
+  margin: auto;
+  display: flex;
+/*  height: 35em;*/
+  padding-top:16px;
+  padding-bottom: 0px;
+/*  background-color: blue;*/
+}
+
+.tileTitle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 2px;
+  font-weight: bold;
+  border-bottom:solid;
+}
+
+.tileTitle div {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.25em;
+}
+
+
+.tileImg {
+  display: flex;
+  width: 66.666666%;
+/*  background-color: darkred;*/
+}
+
+.tileImg img {
+  class: lightbox-trigger;
+  object-fit: cover;
+
+}
+
+.tileText {
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 33.333333%;
+  font-size: 1em;
+  align-content: right;
+  height: inherit;
+/*  background-color: green;*/
+  padding-top: 0px;
+  padding-left: 8px;
+/*  padding-right: 20px;*/
+/*  text-align: justify;*/
+}
+
+.tileText p,
+.tileText a {
+  font-family: inherit;
+/*  text-align: justify;*/
+/*  text-justify: inter-ideograph;*/
+}
+
+.tileText h2 {
+  font-size: 1em;
+  text-align: left;
+}
+
+
+.carousel-container {
+  width: 100%;
+/*  max-width: 1000px;*/
+  height: 35em;       /* ← makes its height = width ÷ (16/9) */
+  position: relative;
+  margin: 1rem auto;
+}
+
+/* 2) Make the viewport consume 90% of that container height */
+.carousel-viewport {
+  width: 100%;
+  height: 85%;              /* ← was 500px */
+  overflow: hidden;
+}
+
+/* 3) Ensure the track fills the viewport */
+.carousel-track {
+  display: flex;
+  height: 100%;             /* ← now equals 90% of the container */
+  transition: transform 1s ease;
+}
+
+/* 4) Your images stay the same */
+.carousel-track img {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+/*  object-fit: cover;*/
+  object-position: 50% 50%;
+  cursor: pointer;
+}
+
+
+/* prev/next buttons */
+.prev, .next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 20px;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 0.25rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  overflow: scroll;
+  scroll-behavior: auto;
+  overflow-y: scroll;
+}
+.carousel-thumbnails img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+
+}
+.carousel-thumbnails img.active {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+
+
+/* Lightbox Styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox-content {
+  text-align: center;
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 6px;
+}
+
+.lightbox-content p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 3rem;                
+  font-weight: bold;              
+  font-family: sans-serif;
+  cursor: pointer;
+  background: greenyellow;
+  opacity: 100%;
+/*  background: rgba(0, 0, 0, 0.2);  /* Dark background */*/
+  color: black;
+  border-radius: 4px;             
+  padding: 3px 16px;             
+  z-index: 999;
+  display: none;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTop:hover {
+  background: greenyellow;
+  opacity: 75%;
+}
 
 .textCard{
-  font-family: "Lucida Console", "Courier New", monospace;
+/*  font-family: "Lucida Console", "Courier New", monospace;*/
   background-color: white;
   padding: 5px;
   margin-top: 20px;
@@ -123,118 +464,6 @@ body {
 
 .textCard p{
   text-indent:45px
-}
-
-.topNav {
-  text-align:center;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 14px;
-  padding-bottom: 0px;
-  display:inline-flex;
-  align-items: center;
-  justify-content: center;
-  width:100%;
-
-}
-
-.topNav p {
-  padding: 4px;
-}
-
-.topNavCont {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding-top:30px;
-  padding-bottom:0px;
-}
-
-.sectionTitle {
-  display:block;
-  width: 100%;
-  background-color: rgba(0,0,0,0.15);
-  font-family: "Lucida Console", "Courier New", monospace;
-  padding:5px;
-  padding-left: 10px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  align-items: center;
-  scroll-margin-top: 170px;
-}
-
-.sectionOutline {
-  border-style: dashed;
-  padding:40px;
-  padding-top:5px;
-  margin-top:10px;
-  margin-bottom:40px;
-}
-
-.tile {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tile .image {
-  width: 50%;
-  margin:auto;
-}
-
-.tile .image:hover{
-  opacity:0.5;
-}
-
-.tile img {
-  width: calc(100% - (20px * 2));
-  object-fit:cover;
-
-}
-
-.lilTile {
-  column-count: 3;
-  column-gap: 1em;
-  width:100%;
-  margin:auto;
-
-  padding-top:100px;
-  justify-content: center;
-
-  background-color: white;
-  }
-
-
-.lilTile_wrapper {
-  display:inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
-
-.lilTile_wrapper img:hover{
-  opacity:0.5;
-}
-
-.lilTile_wrapper img{
-  width:100%;
-}
-
-.tombstone {
-  background-color: rgba(0,0,0,0.15); 
-  padding:10px;
-  font-family: "Lucida Console", "Courier New", monospace;
-  margin-bottom: 20px;
-}
-
-.tombstone p{
-    text-indent:50px;
-    text-align:justify;
-}
-
-
-/* Subheading */
-h2 {
-/*  color: #2800ff;*/
-  font-weight: bold;
 }
 
 /* model viewer stuff */
@@ -255,7 +484,7 @@ left:0;
 top:0;
 width:100%;
 height:100%;
-overflow:auto;
+/*overflow:auto;*/
 background-color:rgb(0,0,0);
 background-color:rgba(0,0,0,0.8)
 }
@@ -294,3 +523,4 @@ filter:alpha(opacity=60);
 .close {
 text-decoration:none;float:right;font-size:24px;font-weight:bold;color:white
 }
+
